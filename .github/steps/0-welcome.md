@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Strona internetowa o moich projektach">
-  
+   <title>Witaj na mojej stronie!</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
