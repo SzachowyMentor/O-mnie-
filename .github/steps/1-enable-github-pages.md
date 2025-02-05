@@ -1,24 +1,77 @@
-<!--
-  <<< Author notes: Step 1 >>>
-  Choose 3-5 steps for your course.
-  The first step is always the hardest, so pick something easy!
-  Link to docs.github.com for further explanations.
-  Encourage users to open new tabs for steps!
--->
-
-## Step 1: Enable GitHub Pages
-
-_Welcome to GitHub Pages and Jekyll :tada:!_
-
-The first step is to enable GitHub Pages on this [repository](https://docs.github.com/en/get-started/quickstart/github-glossary#repository). When you enable GitHub Pages on a repository, GitHub takes the content that's on the main branch and publishes a website based on its contents.
-
-### :keyboard: Activity: Enable GitHub Pages
-
-1. Open a new browser tab, and work on the steps in your second tab while you read the instructions in this tab.
-1. Under your repository name, click **Settings**.
-1. Click **Pages** in the **Code and automation** section.
-1. Ensure "Deploy from a branch" is selected from the **Source** drop-down menu, and then select `main` from the **Branch** drop-down menu.
-1. Click the **Save** button.
-1. Wait about _one minute_ then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
-   > Turning on GitHub Pages creates a deployment of your repository. GitHub Actions may take up to a minute to respond while waiting for the deployment. Future steps will be about 20 seconds; this step is slower.
-   > **Note**: In the **Pages** of **Settings**, the **Visit site** button will appear at the top. Click the button to see your GitHub Pages site.
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O mnie</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    
+    .about-container {
+      max-width: 800px;
+      margin: 50px auto;
+      background-color: #fff;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .about-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+      margin-right: 20px;
+      object-fit: cover;
+    }
+    
+    .bio {
+      flex: 1;
+      line-height: 1.6;
+    }
+    
+    @media (max-width: 600px) {
+      .about-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .profile-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="about-container">
+    <h1>O mnie</h1>
+    <div class="about-content">
+      <!-- Dodaj swoje zdjęcie profilowe -->
+      <img src="profilowe.jpg" alt="Moje zdjęcie profilowe" class="profile-img">
+      <div class="bio">
+        <p>Nazywam się Jan Kowalski. Jestem pasjonatem technologii i programowania, a moją specjalnością jest tworzenie nowoczesnych stron internetowych. Interesuję się również fotografią oraz podróżami, które inspirują mnie do ciągłego rozwoju.</p>
+        <p>Posiadam umiejętności w zakresie HTML, CSS, JavaScript, a także programowania w Pythonie. W swojej pracy cenię sobie precyzję, kreatywność oraz nieustanne poszukiwanie nowych rozwiązań.</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
