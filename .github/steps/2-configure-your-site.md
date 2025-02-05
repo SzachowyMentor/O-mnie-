@@ -19,7 +19,7 @@
       </div>
       <div class="form-group">
         <label for="message">Wiadomość</label>
-       id="message" name="message" placeholder="Wpisz treść wiadomości" required></textarea>
+       id  Wpisz treść wiadomości
       </div>
       <button type="submit">Wyślij</button>
     </form>
