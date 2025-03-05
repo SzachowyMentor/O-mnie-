@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('Pictures/tlo.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        }
+        header {
+            background: white;
+            padding: 20px;
+        }
+        .header-img {
+            width: 100%;
+            max-width: 800px;
+        }
+        main {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            font-size: 18px;
+        }
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header style="background: white; padding: 20px;">
+        <img src="Pictures/Naglowek.png" alt="Nagłówek strony" class="header-img">
+        <nav>
+            <ul>
+                <li><a href="index.html" style="color: black; font-size: 18px; font-weight: bold;">Home</a></li>
+                <li><a href="about.html" style="color: black; font-size: 18px; font-weight: bold;">O mnie</a></li>
+                <li><a href="projects.html" style="color: black; font-size: 18px; font-weight: bold;">Projekty</a></li>
+                <li><a href="contact.html" style="color: black; font-size: 18px; font-weight: bold;">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="contactForm">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Wiadomość:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Wyślij</button>
+        </form>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241317.83343640192!2d19.00122845073464!3d51.10788503943066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471eac4ff1b2e083%3A0x3015d55d7b6e4e0!2sWroc%C5%82aw%2C%20Polska!5e0!3m2!1spl!2spl!4v1617188474975!5m2!1spl!2spl" width="100%" height="300" style="border:0; margin-top: 20px;" allowfullscreen="" loading="lazy"></iframe>
+
+        <div class="contact-info">
+            <p>Kontakt bezpośredni:</p>
+            <p><strong>Dawid Domagalski</strong></p>
+            <p>Telefon: <a href="tel:+48780128060">780 128 060</a></p>
+            <p>WhatsApp: <a href="https://wa.me/48780128060" target="_blank">Napisz do mnie na WhatsApp</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moja Strona</p>
+    </footer>
+
+    <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+        
+        let mailtoLink = `mailto:domagalski.dawid@wp.pl?subject=Kontakt ze strony&body=Imię: ${name}%0AEmail: ${email}%0AWiadomość: ${message}`;
+        
+        window.location.href = mailtoLink;
+    });
+    </script>
+</body>
+</html>
+
+<button onclick="location.href='index.html'" style="position: fixed; bottom: 20px; right: 20px; background-color: #000; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Powrót na stronę główną</button>
