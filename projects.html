@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekty</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('Pictures/tlo.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: left;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+        .header-img {
+            width: 100%;
+            max-width: 800px;
+        }
+        main {
+            padding: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            margin: 20px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .content {
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+ <header style="background: white; padding: 20px;">
+    <img src="Pictures/Naglowek.png" alt="Nagłówek strony" class="header-img">
+    <nav>
+        <ul>
+            <li><a href="index.html" style="color: black; font-size: 18px; font-weight: bold;">Home</a></li>
+            <li><a href="about.html" style="color: black; font-size: 18px; font-weight: bold;">O mnie</a></li>
+            <li><a href="projects.html" style="color: black; font-size: 18px; font-weight: bold;">Projekty</a></li>
+            <li><a href="contact.html" style="color: black; font-size: 18px; font-weight: bold;">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+
+    <main>
+        <div class="content">
+            <section>
+                <h2>Moje kanały YouTube</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/c/TomekJask%C3%B3%C5%82ka" target="_blank">Tomek Jaskółka</a></li>
+                    <li><a href="https://www.youtube.com/@DawidCzerwTV" target="_blank">Dawid Czerw TV</a></li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Gdzie gram w szachy online</h2>
+                <ul>
+                    <li><a href="https://www.chess.com/" target="_blank">Chess.com</a></li>
+                    <li><a href="https://lichess.org/" target="_blank">Lichess</a></li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Moja Strona</p>
+    </footer>
+<button onclick="location.href='index.html'" style="position: fixed; bottom: 20px; right: 20px; background-color: #000; color: #fff; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer;">Powrót na stronę główną</button>
+</body>
+</html>
